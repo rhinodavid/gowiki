@@ -32,6 +32,6 @@ func loadPage(title string) (*Page, error) {
 }
 
 func main() {
-	http.HandleFunc("/view", viewHandler)
+	http.HandleFunc("/view/", viewHandler)
 	http.ListenAndServe(":8080", nil)
 }
